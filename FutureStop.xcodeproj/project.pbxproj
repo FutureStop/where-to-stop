@@ -28,6 +28,10 @@
 		885DF52016EB177E00A25348 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51F16EB177E00A25348 /* EventKit.framework */; };
 		885DF57516EB184F00A25348 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF57416EB184F00A25348 /* CoreData.framework */; };
 		885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */; };
+		88AE6A6C16EBF645008E77BC /* MMExternalDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A6B16EBF645008E77BC /* MMExternalDisplay.m */; };
+		88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A6E16EBF6B2008E77BC /* FSReneContainerViewController.m */; };
+		88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */; };
+		88AE6A7616EBFB46008E77BC /* FSRightScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -79,6 +83,14 @@
 		885DF51F16EB177E00A25348 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		885DF57416EB184F00A25348 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		885DF57716EB190200A25348 /* Blah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blah.xcdatamodel; sourceTree = "<group>"; };
+		88AE6A6A16EBF645008E77BC /* MMExternalDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMExternalDisplay.h; path = Rene/MMExternalDisplay.h; sourceTree = "<group>"; };
+		88AE6A6B16EBF645008E77BC /* MMExternalDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMExternalDisplay.m; path = Rene/MMExternalDisplay.m; sourceTree = "<group>"; };
+		88AE6A6D16EBF6B2008E77BC /* FSReneContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSReneContainerViewController.h; path = Rene/FSReneContainerViewController.h; sourceTree = "<group>"; };
+		88AE6A6E16EBF6B2008E77BC /* FSReneContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSReneContainerViewController.m; path = Rene/FSReneContainerViewController.m; sourceTree = "<group>"; };
+		88AE6A7116EBFB38008E77BC /* FSLeftScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSLeftScreenViewController.h; path = Screens/FSLeftScreenViewController.h; sourceTree = "<group>"; };
+		88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSLeftScreenViewController.m; path = Screens/FSLeftScreenViewController.m; sourceTree = "<group>"; };
+		88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRightScreenViewController.h; sourceTree = "<group>"; };
+		88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRightScreenViewController.m; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -145,6 +157,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88AE6A6916EBF624008E77BC /* Rene */ = {
+			isa = PBXGroup;
+			children = (
+				88AE6A6A16EBF645008E77BC /* MMExternalDisplay.h */,
+				88AE6A6B16EBF645008E77BC /* MMExternalDisplay.m */,
+				88AE6A6D16EBF6B2008E77BC /* FSReneContainerViewController.h */,
+				88AE6A6E16EBF6B2008E77BC /* FSReneContainerViewController.m */,
+			);
+			name = Rene;
+			sourceTree = "<group>";
+		};
+		88AE6A7016EBFAE7008E77BC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				88AE6A7116EBFB38008E77BC /* FSLeftScreenViewController.h */,
+				88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */,
+				88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */,
+				88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
 		C64C6F6516EAE6A900CAD6C7 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +233,8 @@
 		C64C6F7716EAE6A900CAD6C7 /* FutureStop */ = {
 			isa = PBXGroup;
 			children = (
+				88AE6A7016EBFAE7008E77BC /* Screens */,
+				88AE6A6916EBF624008E77BC /* Rene */,
 				C64C6F8016EAE6A900CAD6C7 /* FSAppDelegate.h */,
 				C64C6F8116EAE6A900CAD6C7 /* FSAppDelegate.m */,
 				C64C6F8916EAE6A900CAD6C7 /* FSViewController.h */,
@@ -379,6 +415,10 @@
 				C64C6F8216EAE6A900CAD6C7 /* FSAppDelegate.m in Sources */,
 				C64C6F8B16EAE6A900CAD6C7 /* FSViewController.m in Sources */,
 				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
+				88AE6A6C16EBF645008E77BC /* MMExternalDisplay.m in Sources */,
+				88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */,
+				88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */,
+				88AE6A7616EBFB46008E77BC /* FSRightScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
