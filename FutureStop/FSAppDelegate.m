@@ -9,6 +9,8 @@
 #import "FSAppDelegate.h"
 
 #import "FSViewController.h"
+#import "MMExternalDisplay.h"
+#import "FSLeftScreenViewController.h"
 
 @implementation FSAppDelegate
 
@@ -18,6 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [MMExternalDisplay setUpWithViewControllerFactory:^{
+    FSLeftScreenViewController *leftVC = [[FSLeftScreenViewController alloc] init];
+    return leftVC;
+  }];
+  
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
@@ -27,6 +34,10 @@
 	}
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+  
+  
+  
+  
     return YES;
 }
 
