@@ -2,17 +2,17 @@ futurestop-ios
 ==============
 
 ###Getting Started
-__Git Repo_
+_Git Repo_
 * Ask for a new repo for your project
 * Duplicate this repo into your project's repo https://help.github.com/articles/duplicating-a-repository 
 
-__Code Signing_
+_Code Signing_
 * Make sure Xcode is open
 * In your repo's root directory find and open the 'Provisioning' folder
 * Drag 'FutureStopiOSDistro.developerprofile' into Xcode
 * Type the password we gave you
 
-__Building Archive__
+_Building Archive_
 * Find out what number is assigned to your iOS Future Stop project
 * Update the FutureStop target's bundle identifier with your project number, for example if you are working on project number 3 update the identifier from com.mmsxswcreatathon.FutureStop to com.mmsxswcreatathon.3.FutureStop
 * Update the FutureStop target's code signing build settings, leave the DEBUG pointing to the wildcard dev profile but change the RELEASE to point to the ad hoc profile bound to your bundle identifier from the previous step
