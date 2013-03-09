@@ -13,23 +13,36 @@
 #import "FSMusicVideoPlayerView.h"
 
 @interface FSMusicVideoPlayerViewController ()
-
+@property(nonatomic, strong) MPMoviePlayerController *moviePlayerController;
 @end
 
 @implementation FSMusicVideoPlayerViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
+- (id)init {
+  self = [super init];
+  if (self) {
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"Radiohead - Lotus Flower" ofType:@"mp4"];
+    NSURL *fileURL = [NSURL fileURLWithPath:filepath];
+    _moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+    _moviePlayerController.repeatMode = MPMovieRepeatModeOne;
+    _moviePlayerController.controlStyle = MPMovieControlStyleNone;
+    [self.view addSubview:_moviePlayerController.view];
+  }
+  return self;
+}
+
+- (void)loadView {
+  self.view = [[UIView alloc] init];
+  self.view.backgroundColor = [UIColor blueColor];
+}
+
+- (void)viewWillLayoutSubviews {
+  [super viewWillLayoutSubviews];
+  self.moviePlayerController.view.frame = self.view.bounds;
 }
 
 - (void)playMusicVideo {
-  NSString *filepath = [[NSBundle mainBundle] pathForResource:@"Radiohead - Lotus Flower" ofType:@"mp4"];
-  NSURL *fileURL = [NSURL fileURLWithPath:filepath];
-  MPMoviePlayerController *moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
-  moviePlayerController.repeatMode = MPMovieRepeatModeOne;
-  [self.view addSubview:moviePlayerController.view];
-  moviePlayerController.view.frame = self.view.bounds;
-  [moviePlayerController play];
+  [self.moviePlayerController play];
 }
 
 @end
