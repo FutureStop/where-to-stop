@@ -9,6 +9,11 @@
 #import "FSAppDelegate.h"
 
 #import "FSViewController.h"
+#import "FSTopBarViewController.h"
+
+@interface FSAppDelegate ()
+
+@end
 
 @implementation FSAppDelegate
 
@@ -25,7 +30,7 @@
 	} else {
 	    self.viewController = [[FSViewController alloc] initWithNibName:@"FSViewController_iPad" bundle:nil];
 	}
-	self.window.rootViewController = self.viewController;
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

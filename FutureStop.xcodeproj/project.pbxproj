@@ -45,6 +45,7 @@
 		C64C6F9B16EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6FA316EAE6A900CAD6C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C64C6FA116EAE6A900CAD6C7 /* InfoPlist.strings */; };
 		C64C6FA616EAE6A900CAD6C7 /* FutureStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */; };
+		F5E2E49116EBF49C00D719F4 /* FSTopBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2E49016EBF49C00D719F4 /* FSTopBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		C64C6FA216EAE6A900CAD6C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C64C6FA416EAE6A900CAD6C7 /* FutureStopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FutureStopTests.h; sourceTree = "<group>"; };
 		C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FutureStopTests.m; sourceTree = "<group>"; };
+		F5E2E48F16EBF49C00D719F4 /* FSTopBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTopBarViewController.h; sourceTree = "<group>"; };
+		F5E2E49016EBF49C00D719F4 /* FSTopBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTopBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 		C64C6F7716EAE6A900CAD6C7 /* FutureStop */ = {
 			isa = PBXGroup;
 			children = (
+				F5E2E49216EBF4A400D719F4 /* View Controllers */,
 				C64C6F8016EAE6A900CAD6C7 /* FSAppDelegate.h */,
 				C64C6F8116EAE6A900CAD6C7 /* FSAppDelegate.m */,
 				C64C6F8916EAE6A900CAD6C7 /* FSViewController.h */,
@@ -242,6 +246,15 @@
 				C64C6FA116EAE6A900CAD6C7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5E2E49216EBF4A400D719F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5E2E48F16EBF49C00D719F4 /* FSTopBarViewController.h */,
+				F5E2E49016EBF49C00D719F4 /* FSTopBarViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +392,7 @@
 				C64C6F8216EAE6A900CAD6C7 /* FSAppDelegate.m in Sources */,
 				C64C6F8B16EAE6A900CAD6C7 /* FSViewController.m in Sources */,
 				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
+				F5E2E49116EBF49C00D719F4 /* FSTopBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

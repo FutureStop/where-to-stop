@@ -7,8 +7,11 @@
 //
 
 #import "FSViewController.h"
+#import "FSTopBarViewController.h"
 
 @interface FSViewController ()
+
+@property(nonatomic, strong) FSTopBarViewController *topBarViewController;
 
 @end
 
@@ -17,13 +20,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	[self setupTopBar];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.view addSubview:self.topBarViewController.view];
+}
+
+- (void)setupTopBar {
+    self.topBarViewController = [[FSTopBarViewController alloc] initWithNibName:nil bundle:nil];
+    CGSize applicationFrameSize = [[UIScreen mainScreen] applicationFrame].size;
+    self.topBarViewController.view.frame = CGRectMake(0, 0, applicationFrameSize.width, 80);
+    self.topBarViewController.view.backgroundColor = [UIColor redColor];
+    [self addChildViewController:self.topBarViewController];
 }
 
 @end
