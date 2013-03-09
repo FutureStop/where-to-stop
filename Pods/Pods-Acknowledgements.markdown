@@ -94,6 +94,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
  OTHER DEALINGS IN THE SOFTWARE.
 
 
+## Parse
+
+See https://parse.com/about/terms
+
 ## TestFlightLogger
 
 The MIT License
