@@ -26,6 +26,8 @@
 		885DF51C16EB174A00A25348 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51B16EB174A00A25348 /* CoreMotion.framework */; };
 		885DF51E16EB176B00A25348 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51D16EB176B00A25348 /* ImageIO.framework */; };
 		885DF52016EB177E00A25348 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51F16EB177E00A25348 /* EventKit.framework */; };
+		885DF57516EB184F00A25348 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF57416EB184F00A25348 /* CoreData.framework */; };
+		885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -75,6 +77,8 @@
 		885DF51B16EB174A00A25348 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		885DF51D16EB176B00A25348 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		885DF51F16EB177E00A25348 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		885DF57416EB184F00A25348 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		885DF57716EB190200A25348 /* Blah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blah.xcdatamodel; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -106,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885DF57516EB184F00A25348 /* CoreData.framework in Frameworks */,
 				885DF52016EB177E00A25348 /* EventKit.framework in Frameworks */,
 				885DF51E16EB176B00A25348 /* ImageIO.framework in Frameworks */,
 				885DF51C16EB174A00A25348 /* CoreMotion.framework in Frameworks */,
@@ -167,6 +172,7 @@
 		C64C6F7016EAE6A900CAD6C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				885DF57416EB184F00A25348 /* CoreData.framework */,
 				885DF51F16EB177E00A25348 /* EventKit.framework */,
 				885DF51D16EB176B00A25348 /* ImageIO.framework */,
 				885DF51B16EB174A00A25348 /* CoreMotion.framework */,
@@ -199,6 +205,7 @@
 				C64C6F8A16EAE6A900CAD6C7 /* FSViewController.m */,
 				C64C6F8C16EAE6A900CAD6C7 /* FSViewController_iPhone.xib */,
 				C64C6F8F16EAE6A900CAD6C7 /* FSViewController_iPad.xib */,
+				885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */,
 				C64C6F7816EAE6A900CAD6C7 /* Supporting Files */,
 			);
 			path = FutureStop;
@@ -371,6 +378,7 @@
 				C64C6F7E16EAE6A900CAD6C7 /* main.m in Sources */,
 				C64C6F8216EAE6A900CAD6C7 /* FSAppDelegate.m in Sources */,
 				C64C6F8B16EAE6A900CAD6C7 /* FSViewController.m in Sources */,
+				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +583,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				885DF57716EB190200A25348 /* Blah.xcdatamodel */,
+			);
+			currentVersion = 885DF57716EB190200A25348 /* Blah.xcdatamodel */;
+			path = FutureStop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C64C6F6616EAE6A900CAD6C7 /* Project object */;
 }
