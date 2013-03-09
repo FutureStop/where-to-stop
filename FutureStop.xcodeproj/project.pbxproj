@@ -12,6 +12,20 @@
 		885DF50016EB14F100A25348 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF4FF16EB14F100A25348 /* 114.png */; };
 		885DF50216EB151700A25348 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF50116EB151700A25348 /* 144.png */; };
 		885DF50416EB151F00A25348 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = 885DF50316EB151F00A25348 /* 72.png */; };
+		885DF50616EB169800A25348 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF50516EB169800A25348 /* QuartzCore.framework */; };
+		885DF50816EB169F00A25348 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF50716EB169F00A25348 /* CoreBluetooth.framework */; };
+		885DF50A16EB16A900A25348 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF50916EB16A900A25348 /* Social.framework */; };
+		885DF50C16EB16B800A25348 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF50B16EB16B800A25348 /* CoreLocation.framework */; };
+		885DF50E16EB16C200A25348 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF50D16EB16C200A25348 /* MapKit.framework */; };
+		885DF51016EB16DB00A25348 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF50F16EB16DB00A25348 /* MediaPlayer.framework */; };
+		885DF51216EB16E600A25348 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51116EB16E600A25348 /* MobileCoreServices.framework */; };
+		885DF51416EB16F100A25348 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51316EB16F100A25348 /* AudioToolbox.framework */; };
+		885DF51616EB16FC00A25348 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51516EB16FC00A25348 /* Accounts.framework */; };
+		885DF51816EB170B00A25348 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51716EB170B00A25348 /* AVFoundation.framework */; };
+		885DF51A16EB173700A25348 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51916EB173700A25348 /* CoreImage.framework */; };
+		885DF51C16EB174A00A25348 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51B16EB174A00A25348 /* CoreMotion.framework */; };
+		885DF51E16EB176B00A25348 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51D16EB176B00A25348 /* ImageIO.framework */; };
+		885DF52016EB177E00A25348 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885DF51F16EB177E00A25348 /* EventKit.framework */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -47,6 +61,20 @@
 		885DF4FF16EB14F100A25348 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
 		885DF50116EB151700A25348 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144.png; sourceTree = "<group>"; };
 		885DF50316EB151F00A25348 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
+		885DF50516EB169800A25348 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		885DF50716EB169F00A25348 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		885DF50916EB16A900A25348 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		885DF50B16EB16B800A25348 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		885DF50D16EB16C200A25348 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		885DF50F16EB16DB00A25348 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		885DF51116EB16E600A25348 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		885DF51316EB16F100A25348 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		885DF51516EB16FC00A25348 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		885DF51716EB170B00A25348 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		885DF51916EB173700A25348 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		885DF51B16EB174A00A25348 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		885DF51D16EB176B00A25348 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		885DF51F16EB177E00A25348 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -78,6 +106,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885DF52016EB177E00A25348 /* EventKit.framework in Frameworks */,
+				885DF51E16EB176B00A25348 /* ImageIO.framework in Frameworks */,
+				885DF51C16EB174A00A25348 /* CoreMotion.framework in Frameworks */,
+				885DF51A16EB173700A25348 /* CoreImage.framework in Frameworks */,
+				885DF51816EB170B00A25348 /* AVFoundation.framework in Frameworks */,
+				885DF51616EB16FC00A25348 /* Accounts.framework in Frameworks */,
+				885DF51416EB16F100A25348 /* AudioToolbox.framework in Frameworks */,
+				885DF51216EB16E600A25348 /* MobileCoreServices.framework in Frameworks */,
+				885DF51016EB16DB00A25348 /* MediaPlayer.framework in Frameworks */,
+				885DF50E16EB16C200A25348 /* MapKit.framework in Frameworks */,
+				885DF50C16EB16B800A25348 /* CoreLocation.framework in Frameworks */,
+				885DF50A16EB16A900A25348 /* Social.framework in Frameworks */,
+				885DF50816EB169F00A25348 /* CoreBluetooth.framework in Frameworks */,
+				885DF50616EB169800A25348 /* QuartzCore.framework in Frameworks */,
 				C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */,
 				C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */,
 				C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */,
@@ -125,6 +167,20 @@
 		C64C6F7016EAE6A900CAD6C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				885DF51F16EB177E00A25348 /* EventKit.framework */,
+				885DF51D16EB176B00A25348 /* ImageIO.framework */,
+				885DF51B16EB174A00A25348 /* CoreMotion.framework */,
+				885DF51916EB173700A25348 /* CoreImage.framework */,
+				885DF51716EB170B00A25348 /* AVFoundation.framework */,
+				885DF51516EB16FC00A25348 /* Accounts.framework */,
+				885DF51316EB16F100A25348 /* AudioToolbox.framework */,
+				885DF51116EB16E600A25348 /* MobileCoreServices.framework */,
+				885DF50F16EB16DB00A25348 /* MediaPlayer.framework */,
+				885DF50D16EB16C200A25348 /* MapKit.framework */,
+				885DF50B16EB16B800A25348 /* CoreLocation.framework */,
+				885DF50916EB16A900A25348 /* Social.framework */,
+				885DF50716EB169F00A25348 /* CoreBluetooth.framework */,
+				885DF50516EB169800A25348 /* QuartzCore.framework */,
 				C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */,
 				C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */,
 				C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */,
