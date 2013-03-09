@@ -510,10 +510,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC46B7DB35214847A06FF326 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rene Cacheaux";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FutureStop/FutureStop-Prefix.pch";
 				INFOPLIST_FILE = "FutureStop/FutureStop-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F74FE709-FCCA-4CC6-8F8B-95F055988EE8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
