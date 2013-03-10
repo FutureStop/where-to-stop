@@ -13,6 +13,7 @@
 
 @interface FSTopBarViewController ()
 
+@property(nonatomic, strong) UIImageView *backgroundImageView;
 @property(nonatomic, strong) FSDateTimeViewController *dateTimeViewController;
 @property(nonatomic, strong) FSWeatherViewController *weatherViewController;
 @property(nonatomic, strong) FSBusInfoViewController *busInfoViewController;
@@ -37,6 +38,10 @@
     [self setupBusInfoViewController];
     [self setupDateTimeViewController];
     [self setupWeatherViewController];
+  
+  self.backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"trafficbackground"]];
+  [self.view addSubview:self.backgroundImageView];
+  [self.view sendSubviewToBack:self.backgroundImageView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

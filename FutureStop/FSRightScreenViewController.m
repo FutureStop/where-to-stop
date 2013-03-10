@@ -12,6 +12,7 @@
 #import "FSAlbumViewController.h"
 #import "FSRadioHeadPhotoViewController.h"
 #import "FSTopBarViewController.h"
+#import "FSRightBackgroundViewController.h"
 
 @interface FSRightScreenViewController ()
 @property(nonatomic, strong) FSCountDownViewController *countdownVC;
@@ -19,6 +20,7 @@
 @property(nonatomic, strong) FSAlbumViewController *albumVC;
 @property(nonatomic, strong) FSRadioHeadPhotoViewController *radioheadVC;
 @property(nonatomic, strong) FSTopBarViewController *topBarViewController;
+@property(nonatomic, strong) FSRightBackgroundViewController *backgroundVC;
 @end
 
 static const CGFloat kHeightOfTopBar = 80;
@@ -32,6 +34,7 @@ static const CGFloat kHeightOfTopBar = 80;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self loadBackgroundView];
     [self loadCountdownView];
     [self loadVenueMapView];
     [self loadAlbumView];
@@ -51,6 +54,13 @@ static const CGFloat kHeightOfTopBar = 80;
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
+}
+
+- (void)loadBackgroundView {
+  self.backgroundVC = [[FSRightBackgroundViewController alloc] init];
+  self.backgroundVC.view.frame = CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f);
+  [self addChildViewController:self.backgroundVC];
+  [self.view addSubview:self.backgroundVC.view];
 }
 
 - (void)loadCountdownView {

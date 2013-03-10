@@ -12,6 +12,10 @@
 
 static const CGFloat kButterBarHeight = 80.0f;
 
+// 1920x1020 is not really the right size for the content. Shift all content by these values.
+static const CGFloat kHorizontalOffset = 110.0f;
+static const CGFloat kVerticalOffset = 50.0f;
+
 @interface FSLeftScreenViewController ()
 
 @property(nonatomic, strong) FSTopBarViewController *topBarViewController;
@@ -45,7 +49,10 @@ static const CGFloat kHeightOfTopBar = 80;
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.topBarViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, kHeightOfTopBar);
+    self.topBarViewController.view.frame = CGRectMake(-kHorizontalOffset,
+                                                      -kVerticalOffset,
+                                                      1920.0f + kHorizontalOffset * 2.0f,
+                                                      kButterBarHeight);
 }
 
 - (void)setupTopBar {
@@ -56,10 +63,10 @@ static const CGFloat kHeightOfTopBar = 80;
 
 - (void)addMusicVideoPlayerController {
   FSMusicVideoPlayerViewController *videoPlayerController = [[FSMusicVideoPlayerViewController alloc] init];
-  videoPlayerController.view.frame = CGRectMake(0,
-                                                kButterBarHeight,
-                                                1920.0f,
-                                                1080.0f - kButterBarHeight);
+  videoPlayerController.view.frame = CGRectMake(-kHorizontalOffset,
+                                                kButterBarHeight - kVerticalOffset,
+                                                1920.0f + kHorizontalOffset * 2.0f,
+                                                1080.0f - kButterBarHeight + kVerticalOffset * 2.0f);
   [self addChildViewController:videoPlayerController];
   [videoPlayerController didMoveToParentViewController:videoPlayerController];
   [self.view addSubview:videoPlayerController.view];
