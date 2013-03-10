@@ -8,7 +8,7 @@
 
 #import "FSRadioHeadPhotoViewController.h"
 
-static NSString * const kImageName = @"radiohead";
+static NSString * const kVenueMapImageName = @"radiohead";
 
 @interface FSRadioHeadPhotoViewController ()
 @property(nonatomic, strong) UIImageView *radioheadImageView;
@@ -42,7 +42,7 @@ static NSString * const kImageName = @"radiohead";
 }
 
 - (void)loadRadioheadView {
-  UIImage *radioheadImage = [UIImage imageNamed:kImageName];
+  UIImage *radioheadImage = [UIImage imageNamed:kVenueMapImageName];
   self.radioheadImageView = [[UIImageView alloc] initWithImage:radioheadImage];
   self.radioheadImageView.contentMode = UIViewContentModeScaleAspectFit;
   [self.view addSubview:self.radioheadImageView];

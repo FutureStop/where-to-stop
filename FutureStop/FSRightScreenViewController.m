@@ -11,12 +11,14 @@
 #import "FSVenueMapViewController.h"
 #import "FSAlbumViewController.h"
 #import "FSRadioHeadPhotoViewController.h"
+#import "FSRightBackgroundViewController.h"
 
 @interface FSRightScreenViewController ()
 @property(nonatomic, strong) FSCountDownViewController *countdownVC;
 @property(nonatomic, strong) FSVenueMapViewController *venueMapVC;
 @property(nonatomic, strong) FSAlbumViewController *albumVC;
 @property(nonatomic, strong) FSRadioHeadPhotoViewController *radioheadVC;
+@property(nonatomic, strong) FSRightBackgroundViewController *backgroundVC;
 @end
 
 @implementation FSRightScreenViewController
@@ -28,6 +30,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [self loadBackgroundView];
   [self loadCountdownView];
   [self loadVenueMapView];
   [self loadAlbumView];
@@ -41,6 +44,13 @@
 
 - (void)viewWillLayoutSubviews {
   [super viewWillLayoutSubviews];
+}
+
+- (void)loadBackgroundView {
+  self.backgroundVC = [[FSRightBackgroundViewController alloc] init];
+  self.backgroundVC.view.frame = CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f);
+  [self addChildViewController:self.backgroundVC];
+  [self.view addSubview:self.backgroundVC.view];
 }
 
 - (void)loadCountdownView {
@@ -66,7 +76,7 @@
 
 - (void)loadRadioheadView {
   self.radioheadVC = [[FSRadioHeadPhotoViewController alloc] init];
-  self.radioheadVC.view.frame = CGRectMake(0.0, 700.0f, 1920.0f, 320.0f);
+  self.radioheadVC.view.frame = CGRectMake(0.0, 900.0f, 1920.0f, 320.0f);
   [self addChildViewController:self.radioheadVC];
   [self.view addSubview:self.radioheadVC.view];
 }
