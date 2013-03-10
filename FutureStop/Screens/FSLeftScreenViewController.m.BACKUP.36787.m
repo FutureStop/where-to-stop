@@ -8,7 +8,7 @@
 
 #import "FSLeftScreenViewController.h"
 #import "FSCountDownViewController.h"
-#import "FSLeftScreenViewController.h"
+
 #import "FSMusicVideoPlayerViewController.h"
 
 @interface FSLeftScreenViewController ()
@@ -22,8 +22,10 @@
   self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
+<<<<<<< HEAD
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  
   [self addMusicVideoPlayerController];
 }
 
@@ -34,8 +36,7 @@
   [videoPlayerController didMoveToParentViewController:videoPlayerController];
   videoPlayerController.view.frame = self.view.frame;
   [videoPlayerController playMusicVideo];
-}
-
+=======
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -62,6 +63,7 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+>>>>>>> rene-countdownMapAlbumArt
 }
 
 @end

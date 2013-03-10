@@ -8,8 +8,6 @@
 
 #import "FSLeftScreenViewController.h"
 #import "FSCountDownViewController.h"
-#import "FSLeftScreenViewController.h"
-#import "FSMusicVideoPlayerViewController.h"
 
 @interface FSLeftScreenViewController ()
 @property(nonatomic, strong) FSCountDownViewController *countdownVC;
@@ -20,20 +18,6 @@
 - (void)loadView {
   self.view = [[UIView alloc] init];
   self.view.backgroundColor = [UIColor lightGrayColor];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
-  [self addMusicVideoPlayerController];
-}
-
-- (void)addMusicVideoPlayerController {
-  FSMusicVideoPlayerViewController *videoPlayerController = [[FSMusicVideoPlayerViewController alloc] init];
-  [self addChildViewController:videoPlayerController];
-  [self.view addSubview:videoPlayerController.view];
-  [videoPlayerController didMoveToParentViewController:videoPlayerController];
-  videoPlayerController.view.frame = self.view.frame;
-  [videoPlayerController playMusicVideo];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

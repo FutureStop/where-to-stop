@@ -14,6 +14,7 @@
 
 @interface FSMusicVideoPlayerViewController ()
 @property(nonatomic, strong) MPMoviePlayerController *moviePlayerController;
+@property(nonatomic, strong) UIImageView *retroTVImageView;
 @end
 
 @implementation FSMusicVideoPlayerViewController
@@ -27,18 +28,22 @@
     _moviePlayerController.repeatMode = MPMovieRepeatModeOne;
     _moviePlayerController.controlStyle = MPMovieControlStyleNone;
     [self.view addSubview:_moviePlayerController.view];
+    
+    _retroTVImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"retrotv"]];
+    [self.view addSubview:_retroTVImageView];    
   }
   return self;
 }
 
 - (void)loadView {
   self.view = [[UIView alloc] init];
-  self.view.backgroundColor = [UIColor blueColor];
+  self.view.backgroundColor = [UIColor blackColor];
 }
 
 - (void)viewWillLayoutSubviews {
   [super viewWillLayoutSubviews];
-  self.moviePlayerController.view.frame = self.view.bounds;
+  self.retroTVImageView.frame = self.view.bounds;
+  self.moviePlayerController.view.frame = CGRectMake(50, 0, 950, 680);
 }
 
 - (void)playMusicVideo {
