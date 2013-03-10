@@ -19,7 +19,7 @@
 
 - (void)loadView {
   self.view = [[UIView alloc] init];
-  self.view.backgroundColor = [UIColor orangeColor];
+  self.view.backgroundColor = [UIColor clearColor];
   self.view.autoresizesSubviews = YES;
 }
 
@@ -52,6 +52,7 @@
 
 - (void)loadCountdownLabel {
   self.countdownLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+  self.countdownLabel.backgroundColor = [UIColor clearColor];
   self.countdownLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
   self.countdownLabel.textAlignment = NSTextAlignmentCenter;
   self.countdownLabel.font = [UIFont systemFontOfSize:60.0f];

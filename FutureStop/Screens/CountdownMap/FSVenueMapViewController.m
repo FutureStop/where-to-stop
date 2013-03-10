@@ -8,26 +8,42 @@
 
 #import "FSVenueMapViewController.h"
 
-@interface FSVenueMapViewController ()
+static NSString * const kImageName = @"venue";
 
+@interface FSVenueMapViewController ()
+@property(nonatomic, strong) UIImageView *venueMapImageView;
 @end
 
 @implementation FSVenueMapViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (void)loadView {
+  self.view = [[UIView alloc] init];
+  self.view.backgroundColor = [UIColor redColor];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.view.clipsToBounds = YES;
+	[self loadVenueMap];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  self.venueMapImageView.frame = self.view.bounds;
+}
+
+- (void)viewWillLayoutSubviews {
+  [super viewWillLayoutSubviews];
+//  [self.venueMapImageView sizeToFit];
+}
+
+- (void)loadVenueMap {
+  UIImage *venueImage = [UIImage imageNamed:kImageName];
+  self.venueMapImageView = [[UIImageView alloc] initWithImage:venueImage];
+  self.venueMapImageView.contentMode = UIViewContentModeScaleAspectFit;
+  [self.view addSubview:self.venueMapImageView];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
