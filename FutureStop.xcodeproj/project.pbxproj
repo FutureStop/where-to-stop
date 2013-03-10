@@ -38,7 +38,6 @@
 		A34DCA2016EBF8FD00E55327 /* FSMusicVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */; };
 		A34DCA2216EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */; };
 		A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100B416EC050F00E4BB74 /* retrotv@2x.png */; };
-		A39100B716EC15F600E4BB74 /* radioheadlogo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100B616EC15F600E4BB74 /* radioheadlogo@2x.jpg */; };
 		A39100B916EC1C3800E4BB74 /* radiohead_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */; };
 		A39100BB16EC1C4D00E4BB74 /* radiohead_logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
@@ -110,7 +109,6 @@
 		A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMusicVideoPlayerView.m; sourceTree = "<group>"; };
 		A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Radiohead - Lotus Flower.mp4"; sourceTree = "<group>"; };
 		A39100B416EC050F00E4BB74 /* retrotv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retrotv@2x.png"; sourceTree = "<group>"; };
-		A39100B616EC15F600E4BB74 /* radioheadlogo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "radioheadlogo@2x.jpg"; sourceTree = "<group>"; };
 		A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radiohead_background.jpg; sourceTree = "<group>"; };
 		A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead_logo_black.png; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -222,7 +220,6 @@
 				885DF4FD16EB14E600A25348 /* 57.png */,
 				A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */,
 				A39100B416EC050F00E4BB74 /* retrotv@2x.png */,
-				A39100B616EC15F600E4BB74 /* radioheadlogo@2x.jpg */,
 				A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */,
 				A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */,
 				C64C6F7716EAE6A900CAD6C7 /* FutureStop */,
@@ -408,7 +405,6 @@
 				885DF50416EB151F00A25348 /* 72.png in Resources */,
 				A34DCA2216EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 in Resources */,
 				A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */,
-				A39100B716EC15F600E4BB74 /* radioheadlogo@2x.jpg in Resources */,
 				A39100B916EC1C3800E4BB74 /* radiohead_background.jpg in Resources */,
 				A39100BB16EC1C4D00E4BB74 /* radiohead_logo_black.png in Resources */,
 			);
