@@ -32,12 +32,14 @@
         self.busLineLabel.text = @" 9 ";
         self.busLineLabel.font = [UIFont boldSystemFontOfSize:50];
         self.busLineLabel.adjustsFontSizeToFitWidth = YES;
+        self.busLineLabel.textColor = [UIColor whiteColor];
         self.busLineLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         self.arrivalTimeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         self.arrivalTimeLabel.text = [self formattedWaitTimeUntilNextBus];
         self.arrivalTimeLabel.font = [UIFont boldSystemFontOfSize:50];
         self.arrivalTimeLabel.adjustsFontSizeToFitWidth = YES;
         self.arrivalTimeLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+        self.arrivalTimeLabel.textColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -51,6 +53,8 @@
     self.busLineLabel.frame = [self frameForBusLineLabel];
     self.busLineLabel.layer.borderColor = [[UIColor blackColor] CGColor];
     self.busLineLabel.layer.borderWidth = 3;
+    self.busLineLabel.backgroundColor = [UIColor clearColor];
+    self.arrivalTimeLabel.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.busLineLabel];
     self.arrivalTimeLabel.frame = [self frameForArrivalTimeLabel];
     [self.view addSubview:self.arrivalTimeLabel];

@@ -38,8 +38,10 @@ const CGFloat kWidthOfImageView = 64;
 {
     [super viewDidLoad];
 	self.currentWeatherImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+    self.currentWeatherImageView.backgroundColor = [UIColor clearColor];
     self.currentTemperatureLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    self.currentTemperatureLabel.opaque = NO;
+    self.currentTemperatureLabel.backgroundColor = [UIColor clearColor];
+    self.currentTemperatureLabel.textColor = [UIColor whiteColor];
     self.currentTemperatureLabel.font = [UIFont boldSystemFontOfSize:50];
     self.currentTemperatureLabel.adjustsFontSizeToFitWidth = YES;
     self.currentTemperatureLabel.lineBreakMode = NSLineBreakByTruncatingTail;
