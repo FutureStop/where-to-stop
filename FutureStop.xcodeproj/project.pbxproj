@@ -45,6 +45,8 @@
 		A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100B416EC050F00E4BB74 /* retrotv@2x.png */; };
 		A39100B916EC1C3800E4BB74 /* radiohead_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */; };
 		A39100BB16EC1C4D00E4BB74 /* radiohead_logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */; };
+		A39100BD16EC234800E4BB74 /* lotus_flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100BC16EC234800E4BB74 /* lotus_flower.jpg */; };
+		A39100BF16EC2C7B00E4BB74 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100BE16EC2C7B00E4BB74 /* noise.png */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -123,6 +125,8 @@
 		A39100B416EC050F00E4BB74 /* retrotv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retrotv@2x.png"; sourceTree = "<group>"; };
 		A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radiohead_background.jpg; sourceTree = "<group>"; };
 		A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead_logo_black.png; sourceTree = "<group>"; };
+		A39100BC16EC234800E4BB74 /* lotus_flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lotus_flower.jpg; sourceTree = "<group>"; };
+		A39100BE16EC2C7B00E4BB74 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -241,6 +245,8 @@
 				A39100B416EC050F00E4BB74 /* retrotv@2x.png */,
 				A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */,
 				A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */,
+				A39100BC16EC234800E4BB74 /* lotus_flower.jpg */,
+				A39100BE16EC2C7B00E4BB74 /* noise.png */,
 				C64C6F7716EAE6A900CAD6C7 /* FutureStop */,
 				C64C6F9E16EAE6A900CAD6C7 /* FutureStopTests */,
 				C64C6F7016EAE6A900CAD6C7 /* Frameworks */,
@@ -426,10 +432,12 @@
 				A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */,
 				A39100B916EC1C3800E4BB74 /* radiohead_background.jpg in Resources */,
 				A39100BB16EC1C4D00E4BB74 /* radiohead_logo_black.png in Resources */,
-				A39100B516EC050F00E4BB74 /* retrotv.png in Resources */,
+				A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */,
 				88AE6A7F16EC100B008E77BC /* venue.png in Resources */,
 				88AE6A8116EC18DE008E77BC /* album.jpg in Resources */,
 				88AE6A8616EC1F75008E77BC /* radiohead.png in Resources */,
+				A39100BD16EC234800E4BB74 /* lotus_flower.jpg in Resources */,
+				A39100BF16EC2C7B00E4BB74 /* noise.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
