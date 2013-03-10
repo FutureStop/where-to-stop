@@ -57,6 +57,8 @@
 		A39100BD16EC234800E4BB74 /* lotus_flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100BC16EC234800E4BB74 /* lotus_flower.jpg */; };
 		A39100BF16EC2C7B00E4BB74 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100BE16EC2C7B00E4BB74 /* noise.png */; };
 		A39100C116EC497400E4BB74 /* trafficbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100C016EC497400E4BB74 /* trafficbackground.png */; };
+		A39100C616EC530D00E4BB74 /* FSIDFence.m in Sources */ = {isa = PBXBuildFile; fileRef = A39100C316EC530C00E4BB74 /* FSIDFence.m */; };
+		A39100C716EC530D00E4BB74 /* FSRangeFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = A39100C516EC530C00E4BB74 /* FSRangeFinder.m */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -162,6 +164,10 @@
 		A39100BC16EC234800E4BB74 /* lotus_flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lotus_flower.jpg; sourceTree = "<group>"; };
 		A39100BE16EC2C7B00E4BB74 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
 		A39100C016EC497400E4BB74 /* trafficbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trafficbackground.png; sourceTree = "<group>"; };
+		A39100C216EC530C00E4BB74 /* FSIDFence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSIDFence.h; sourceTree = "<group>"; };
+		A39100C316EC530C00E4BB74 /* FSIDFence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSIDFence.m; sourceTree = "<group>"; };
+		A39100C416EC530C00E4BB74 /* FSRangeFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRangeFinder.h; sourceTree = "<group>"; };
+		A39100C516EC530C00E4BB74 /* FSRangeFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRangeFinder.m; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -373,6 +379,10 @@
 				A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */,
 				A34DCA1B16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.h */,
 				A34DCA1C16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m */,
+				A39100C216EC530C00E4BB74 /* FSIDFence.h */,
+				A39100C316EC530C00E4BB74 /* FSIDFence.m */,
+				A39100C416EC530C00E4BB74 /* FSRangeFinder.h */,
+				A39100C516EC530C00E4BB74 /* FSRangeFinder.m */,
 			);
 			path = FutureStop;
 			sourceTree = "<group>";
@@ -618,6 +628,8 @@
 				88AE6A8C16EC22D8008E77BC /* FSRightBackgroundViewController.m in Sources */,
 				88AE6A9B16EC4AEA008E77BC /* FSRightArtViewController.m in Sources */,
 				88AE6A9E16EC4C06008E77BC /* FSLeftArtViewController.m in Sources */,
+				A39100C616EC530D00E4BB74 /* FSIDFence.m in Sources */,
+				A39100C716EC530D00E4BB74 /* FSRangeFinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
