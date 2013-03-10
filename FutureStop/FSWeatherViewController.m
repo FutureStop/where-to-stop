@@ -56,11 +56,6 @@ const CGFloat kWidthOfImageView = 64;
     [self.view addSubview:self.currentTemperatureLabel];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    NSLog(@"break here.");
-}
-
 - (NSString *)formattedTemperatureString {
     return [FSWeatherViewController formattedTemperatureStringForDegreesF:self.currentTemperatureDegreesFahrenheit];
 }

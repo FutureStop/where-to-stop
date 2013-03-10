@@ -52,6 +52,7 @@ const CGFloat kHeightOfTopBar = 80;
     self.topBarViewController = [[FSTopBarViewController alloc] initWithNibName:nil bundle:nil];
     [self addChildViewController:self.topBarViewController];
     [self.view addSubview:self.topBarViewController.view];
+}
 
 - (void)addMusicVideoPlayerController {
   FSMusicVideoPlayerViewController *videoPlayerController = [[FSMusicVideoPlayerViewController alloc] init];

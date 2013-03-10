@@ -47,6 +47,7 @@
                                             selector:@selector(updateTimeLabel)
                                             userInfo:nil
                                              repeats:YES];
+    [self.updater fire];
 }
 
 + (CGFloat)optimalWidth {
