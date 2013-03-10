@@ -26,6 +26,7 @@
         self.label.font = [UIFont boldSystemFontOfSize:50];
         self.label.adjustsFontSizeToFitWidth = YES;
         self.label.lineBreakMode = NSLineBreakByTruncatingTail;
+        self.label.textColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -34,6 +35,7 @@
 {
     [super viewDidLoad];
 	[self.view setOpaque:NO];
+    self.label.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.label];
 }
 

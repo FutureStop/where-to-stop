@@ -24,6 +24,8 @@ static const CGFloat kVerticalOffset = 50.0f;
 @property(nonatomic, strong) FSMusicVideoPlayerViewController *videoPlayerController;
 @end
 
+static const CGFloat kHeightOfTopBar = 80;
+
 @implementation FSLeftScreenViewController
 
 - (void)loadView {
@@ -44,6 +46,8 @@ static const CGFloat kVerticalOffset = 50.0f;
 {
   [super viewDidLoad];
   [self loadArt];
+  [self setupTopBar];
+  self.topBarViewController.view.alpha = 0.0f;
   FSLeftScreenViewController __weak *weakSelf = self;
 	double delayInSeconds = 4.0;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
@@ -51,7 +55,7 @@ static const CGFloat kVerticalOffset = 50.0f;
     [weakSelf loadRadiohead];
     self.topBarViewController.view.alpha = 0.0f;
     self.videoPlayerController.view.alpha = 0.0f;
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.6 animations:^{
       self.topBarViewController.view.alpha = 1.0f;
       self.videoPlayerController.view.alpha = 1.0f;
     }];
@@ -59,8 +63,26 @@ static const CGFloat kVerticalOffset = 50.0f;
 }
 
 - (void)loadRadiohead {
-  [self setupTopBar];
   [self addMusicVideoPlayerController];
+  
+  FSLeftScreenViewController __weak *weakSelf = self;
+  double delayInSeconds = 4.0;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    [weakSelf unloadRadiohead];
+  });
+}
+
+- (void)unloadRadiohead {
+  [UIView animateWithDuration:0.6 animations:^{
+    self.topBarViewController.view.alpha = 0.0f;
+    self.videoPlayerController.view.alpha = 0.0f;
+    
+  } completion:^(BOOL completion){
+    [self.videoPlayerController.view removeFromSuperview];
+    [self.videoPlayerController removeFromParentViewController];
+    self.videoPlayerController = nil;
+  }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
