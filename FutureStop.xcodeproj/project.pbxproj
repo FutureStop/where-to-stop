@@ -49,6 +49,17 @@
 		C64C6F9B16EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6FA316EAE6A900CAD6C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C64C6FA116EAE6A900CAD6C7 /* InfoPlist.strings */; };
 		C64C6FA616EAE6A900CAD6C7 /* FutureStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */; };
+		F5E2E49516EBFF0E00D719F4 /* FSTopBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2E49416EBFF0E00D719F4 /* FSTopBarViewController.m */; };
+		F5E2E49B16EC1D3700D719F4 /* FSDateTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2E49A16EC1D3700D719F4 /* FSDateTimeViewController.m */; };
+		F5E2E49E16EC239600D719F4 /* FSWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2E49D16EC239600D719F4 /* FSWeatherViewController.m */; };
+		F5E2E4B816EC261C00D719F4 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B016EC261C00D719F4 /* sunny.png */; };
+		F5E2E4B916EC261C00D719F4 /* crescentsun.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B116EC261C00D719F4 /* crescentsun.png */; };
+		F5E2E4BA16EC261C00D719F4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B216EC261C00D719F4 /* 3.png */; };
+		F5E2E4BB16EC261C00D719F4 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B316EC261C00D719F4 /* 4.png */; };
+		F5E2E4BC16EC261C00D719F4 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B416EC261C00D719F4 /* 5.png */; };
+		F5E2E4BD16EC261C00D719F4 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B516EC261C00D719F4 /* 6.png */; };
+		F5E2E4BE16EC261C00D719F4 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B616EC261C00D719F4 /* 7.png */; };
+		F5E2E4BF16EC261C00D719F4 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B716EC261C00D719F4 /* 8.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +126,20 @@
 		C64C6FA216EAE6A900CAD6C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C64C6FA416EAE6A900CAD6C7 /* FutureStopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FutureStopTests.h; sourceTree = "<group>"; };
 		C64C6FA516EAE6A900CAD6C7 /* FutureStopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FutureStopTests.m; sourceTree = "<group>"; };
+		F5E2E49316EBFF0E00D719F4 /* FSTopBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTopBarViewController.h; sourceTree = "<group>"; };
+		F5E2E49416EBFF0E00D719F4 /* FSTopBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTopBarViewController.m; sourceTree = "<group>"; };
+		F5E2E49916EC1D3700D719F4 /* FSDateTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSDateTimeViewController.h; sourceTree = "<group>"; };
+		F5E2E49A16EC1D3700D719F4 /* FSDateTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSDateTimeViewController.m; sourceTree = "<group>"; };
+		F5E2E49C16EC239600D719F4 /* FSWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSWeatherViewController.h; sourceTree = "<group>"; };
+		F5E2E49D16EC239600D719F4 /* FSWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSWeatherViewController.m; sourceTree = "<group>"; };
+		F5E2E4B016EC261C00D719F4 /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
+		F5E2E4B116EC261C00D719F4 /* crescentsun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crescentsun.png; sourceTree = "<group>"; };
+		F5E2E4B216EC261C00D719F4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		F5E2E4B316EC261C00D719F4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		F5E2E4B416EC261C00D719F4 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		F5E2E4B516EC261C00D719F4 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		F5E2E4B616EC261C00D719F4 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		F5E2E4B716EC261C00D719F4 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +200,7 @@
 				88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */,
 				88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */,
 				88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */,
+				F5E2E49616EC025900D719F4 /* Top Bar */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -280,6 +306,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F5E2E49616EC025900D719F4 /* Top Bar */ = {
+			isa = PBXGroup;
+			children = (
+				F5E2E49916EC1D3700D719F4 /* FSDateTimeViewController.h */,
+				F5E2E49A16EC1D3700D719F4 /* FSDateTimeViewController.m */,
+				F5E2E49316EBFF0E00D719F4 /* FSTopBarViewController.h */,
+				F5E2E49416EBFF0E00D719F4 /* FSTopBarViewController.m */,
+				F5E2E49C16EC239600D719F4 /* FSWeatherViewController.h */,
+				F5E2E49D16EC239600D719F4 /* FSWeatherViewController.m */,
+				F5E2E49F16EC250C00D719F4 /* Glyphish weather icons */,
+			);
+			name = "Top Bar";
+			sourceTree = "<group>";
+		};
+		F5E2E49F16EC250C00D719F4 /* Glyphish weather icons */ = {
+			isa = PBXGroup;
+			children = (
+				F5E2E4B016EC261C00D719F4 /* sunny.png */,
+				F5E2E4B116EC261C00D719F4 /* crescentsun.png */,
+				F5E2E4B216EC261C00D719F4 /* 3.png */,
+				F5E2E4B316EC261C00D719F4 /* 4.png */,
+				F5E2E4B416EC261C00D719F4 /* 5.png */,
+				F5E2E4B516EC261C00D719F4 /* 6.png */,
+				F5E2E4B616EC261C00D719F4 /* 7.png */,
+				F5E2E4B716EC261C00D719F4 /* 8.png */,
+			);
+			name = "Glyphish weather icons";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,6 +418,14 @@
 				885DF50016EB14F100A25348 /* 114.png in Resources */,
 				885DF50216EB151700A25348 /* 144.png in Resources */,
 				885DF50416EB151F00A25348 /* 72.png in Resources */,
+				F5E2E4B816EC261C00D719F4 /* sunny.png in Resources */,
+				F5E2E4B916EC261C00D719F4 /* crescentsun.png in Resources */,
+				F5E2E4BA16EC261C00D719F4 /* 3.png in Resources */,
+				F5E2E4BB16EC261C00D719F4 /* 4.png in Resources */,
+				F5E2E4BC16EC261C00D719F4 /* 5.png in Resources */,
+				F5E2E4BD16EC261C00D719F4 /* 6.png in Resources */,
+				F5E2E4BE16EC261C00D719F4 /* 7.png in Resources */,
+				F5E2E4BF16EC261C00D719F4 /* 8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +482,9 @@
 				88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */,
 				88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */,
 				88AE6A7616EBFB46008E77BC /* FSRightScreenViewController.m in Sources */,
+				F5E2E49516EBFF0E00D719F4 /* FSTopBarViewController.m in Sources */,
+				F5E2E49B16EC1D3700D719F4 /* FSDateTimeViewController.m in Sources */,
+				F5E2E49E16EC239600D719F4 /* FSWeatherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

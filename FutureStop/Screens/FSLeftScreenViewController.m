@@ -7,10 +7,15 @@
 //
 
 #import "FSLeftScreenViewController.h"
+#import "FSTopBarViewController.h"
 
 @interface FSLeftScreenViewController ()
 
+@property(nonatomic, strong) FSTopBarViewController *topBarViewController;
+
 @end
+
+const CGFloat kHeightOfTopBar = 80;
 
 @implementation FSLeftScreenViewController
 
@@ -31,7 +36,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	[self setupTopBar];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.topBarViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, kHeightOfTopBar);
+}
+
+- (void)setupTopBar {
+    self.topBarViewController = [[FSTopBarViewController alloc] initWithNibName:nil bundle:nil];
+    [self addChildViewController:self.topBarViewController];
+    [self.view addSubview:self.topBarViewController.view];
 }
 
 - (void)didReceiveMemoryWarning
