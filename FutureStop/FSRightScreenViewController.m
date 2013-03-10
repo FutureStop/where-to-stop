@@ -25,7 +25,7 @@
 
 - (void)loadView {
   self.view = [[UIView alloc] init];
-  self.view.backgroundColor = [UIColor whiteColor];
+  self.view.backgroundColor = [UIColor blackColor];
 }
 
 - (void)viewDidLoad {
@@ -48,14 +48,15 @@
 
 - (void)loadBackgroundView {
   self.backgroundVC = [[FSRightBackgroundViewController alloc] init];
-  self.backgroundVC.view.frame = CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f);
+  self.backgroundVC.view.frame =
+    CGRectOffset(CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f), 40.0f, 80.0f);
   [self addChildViewController:self.backgroundVC];
   [self.view addSubview:self.backgroundVC.view];
 }
 
 - (void)loadCountdownView {
   self.countdownVC = [[FSCountDownViewController alloc] init];
-  self.countdownVC.view.frame = CGRectMake(1000.0f, 100.0f, 900.0f, 200.0f);
+  self.countdownVC.view.frame = CGRectMake(1000.0f, 90.0f, 900.0f, 200.0f);
   [self addChildViewController:self.countdownVC];
   [self.view addSubview:self.countdownVC.view];
 }

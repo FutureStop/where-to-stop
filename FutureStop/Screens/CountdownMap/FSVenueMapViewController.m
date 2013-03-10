@@ -46,7 +46,7 @@ static NSString * const kPosterImageName = @"poster.jpg";
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
   UIView *currentView = self.images[self.currentImageIndex];
-  currentView.frame = CGRectOffset(self.view.bounds, 900.0f, 0.0f);
+  currentView.frame = CGRectOffset(self.view.bounds, 1200.0f, 0.0f);
   
   FSVenueMapViewController __weak *weakSelf = self;
   [UIView animateWithDuration:2
@@ -69,7 +69,7 @@ static NSString * const kPosterImageName = @"poster.jpg";
     self.currentImageIndex = 0;
   }
   UIView *currentView = self.images[self.currentImageIndex];
-  currentView.frame = CGRectOffset(self.view.bounds, 900.0f, 0.0f);
+  currentView.frame = CGRectOffset(self.view.bounds, 1200.0f, 0.0f);
   
   FSVenueMapViewController __weak *weakSelf = self;
   [UIView animateWithDuration:2
@@ -78,7 +78,7 @@ static NSString * const kPosterImageName = @"poster.jpg";
                    animations:^{
                      [weakSelf.view addSubview:currentView];
                      currentView.frame = weakSelf.view.bounds;
-                     previousView.frame = CGRectOffset(previousView.frame, 0.0f, 800.0f);
+                     previousView.frame = CGRectOffset(previousView.frame, 0.0f, 1000.0f);
                    } completion:^(BOOL completed){
                      [previousView removeFromSuperview];
                      [weakSelf animateNextThing];
