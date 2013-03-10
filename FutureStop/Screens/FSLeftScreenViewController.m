@@ -22,8 +22,6 @@ static const CGFloat kVerticalOffset = 50.0f;
 
 @end
 
-const CGFloat kHeightOfTopBar = 80;
-
 @implementation FSLeftScreenViewController
 
 - (void)loadView {
@@ -49,7 +47,10 @@ const CGFloat kHeightOfTopBar = 80;
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    self.topBarViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, kHeightOfTopBar);
+    self.topBarViewController.view.frame = CGRectMake(-kHorizontalOffset,
+                                                      -kVerticalOffset,
+                                                      1920.0f + kHorizontalOffset * 2.0f,
+                                                      kButterBarHeight);
 }
 
 - (void)setupTopBar {
