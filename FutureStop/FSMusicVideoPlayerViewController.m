@@ -14,7 +14,6 @@
 
 @interface FSMusicVideoPlayerViewController ()
 @property(nonatomic, strong) MPMoviePlayerController *moviePlayerController;
-@property(nonatomic, strong) UIImageView *retroTVImageView;
 @end
 
 @implementation FSMusicVideoPlayerViewController
@@ -28,36 +27,13 @@
     _moviePlayerController.repeatMode = MPMovieRepeatModeOne;
     _moviePlayerController.controlStyle = MPMovieControlStyleNone;
     _moviePlayerController.scalingMode = MPMovieScalingModeAspectFill;
-    [self.view addSubview:_moviePlayerController.view];
-    
-    _retroTVImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"retrotv"]];
-    [self.view addSubview:_retroTVImageView];
   }
   return self;
 }
 
 - (void)loadView {
-  self.view = [[UIView alloc] init];
-  self.view.backgroundColor = [UIColor blackColor];
-}
-
-- (void)viewWillLayoutSubviews {
-  [super viewWillLayoutSubviews];
-  
-  const CGFloat xTVMargin = 100.0f;
-  const CGFloat yTVMargin = 100.0f;
-  
-  const CGFloat xVideoMargin = 150.0f;
-  const CGFloat yVideoMargin = 50.0f;
-  
-  self.retroTVImageView.frame = CGRectMake(xTVMargin,
-                                           yTVMargin,
-                                           CGRectGetWidth(self.view.frame) - xTVMargin * 2.0f,
-                                           CGRectGetHeight(self.view.frame) - yTVMargin * 2.0f);
-  self.moviePlayerController.view.frame = CGRectMake(CGRectGetMinX(self.retroTVImageView.frame) + xVideoMargin,
-                                                     CGRectGetMinY(self.retroTVImageView.frame) + yVideoMargin,
-                                                     CGRectGetWidth(self.retroTVImageView.frame) - xVideoMargin - 500.0f,
-                                                     CGRectGetHeight(self.retroTVImageView.frame) - yVideoMargin - 100.0f);
+  self.view = [[FSMusicVideoPlayerView alloc] initWithMovieView:self.moviePlayerController.view];
+  self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)playMusicVideo {

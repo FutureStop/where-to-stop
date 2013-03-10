@@ -10,6 +10,8 @@
 
 #import "FSMusicVideoPlayerViewController.h"
 
+static const CGFloat kButterBarHeight = 80.0f;
+
 @interface FSLeftScreenViewController ()
 
 @end
@@ -32,7 +34,10 @@
   [self addChildViewController:videoPlayerController];
   [self.view addSubview:videoPlayerController.view];
   [videoPlayerController didMoveToParentViewController:videoPlayerController];
-  videoPlayerController.view.frame = self.view.frame;
+  videoPlayerController.view.frame = CGRectMake(0,
+                                                kButterBarHeight,
+                                                self.view.bounds.size.width,
+                                                self.view.bounds.size.height - kButterBarHeight * 2.0f);
   [videoPlayerController playMusicVideo];
 }
 

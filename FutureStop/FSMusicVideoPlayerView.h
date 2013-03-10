@@ -10,4 +10,6 @@
 
 @interface FSMusicVideoPlayerView : UIView
 
+- (id)initWithMovieView:(UIView *)movieView;
+
 @end
