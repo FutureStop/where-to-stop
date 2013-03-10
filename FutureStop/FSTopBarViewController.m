@@ -7,14 +7,15 @@
 //
 
 #import "FSTopBarViewController.h"
+#import "FSBusInfoViewController.h"
 #import "FSDateTimeViewController.h"
 #import "FSWeatherViewController.h"
-#import "TTTTimeIntervalFormatter.h"
 
 @interface FSTopBarViewController ()
 
 @property(nonatomic, strong) FSDateTimeViewController *dateTimeViewController;
 @property(nonatomic, strong) FSWeatherViewController *weatherViewController;
+@property(nonatomic, strong) FSBusInfoViewController *busInfoViewController;
 
 @end
 
@@ -33,6 +34,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setupBusInfoViewController];
     [self setupDateTimeViewController];
     [self setupWeatherViewController];
 }
@@ -41,6 +43,13 @@
     [super viewDidAppear:animated];
     [self positionDateTimeView];
     [self positionWeatherViewController];
+    [self positionBusInfoView];
+}
+
+- (void)setupBusInfoViewController {
+    self.busInfoViewController = [[FSBusInfoViewController alloc] initWithNibName:nil bundle:nil];
+    [self addChildViewController:self.busInfoViewController];
+    [self.view addSubview:self.busInfoViewController.view];
 }
 
 - (void)setupDateTimeViewController {
@@ -59,6 +68,13 @@
     return ((self.view.bounds.size.width / 2) - ([FSDateTimeViewController optimalWidth] / 2));
 }
 
+- (void)positionBusInfoView {
+    CGRect frame;
+    frame.origin = CGPointZero;
+    frame.size = CGSizeMake(600, 80);
+    self.busInfoViewController.view.frame = frame;
+}
+
 - (void)positionDateTimeView {
     CGRect frame;
     frame.origin = CGPointMake([self xOriginOfDateTimeView], 0);
@@ -71,18 +87,6 @@
     frame.origin = CGPointMake(self.view.bounds.size.width-400, 0);
     frame.size = CGSizeMake(400, 80);
     self.weatherViewController.view.frame = frame;
-}
-
-- (NSTimeInterval)secondsUntilNextBus {
-    // TODO: Make this count down!
-    return 524;
-}
-
-- (NSString *)formattedWaitTimeUntilNextBus {
-    NSTimeInterval seconds = [self secondsUntilNextBus];
-    TTTTimeIntervalFormatter *formatter = [[TTTTimeIntervalFormatter alloc] init];
-    formatter.usesAbbreviatedCalendarUnits = YES;
-    return [formatter stringForTimeInterval:seconds];
 }
 
 @end

@@ -75,6 +75,7 @@
 		F5E2E4BD16EC261C00D719F4 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B516EC261C00D719F4 /* 6.png */; };
 		F5E2E4BE16EC261C00D719F4 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B616EC261C00D719F4 /* 7.png */; };
 		F5E2E4BF16EC261C00D719F4 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E2E4B716EC261C00D719F4 /* 8.png */; };
+		F5E2E4C216EC3C6400D719F4 /* FSBusInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2E4C116EC3C6400D719F4 /* FSBusInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +177,8 @@
 		F5E2E4B516EC261C00D719F4 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		F5E2E4B616EC261C00D719F4 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
 		F5E2E4B716EC261C00D719F4 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		F5E2E4C016EC3C6400D719F4 /* FSBusInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBusInfoViewController.h; sourceTree = "<group>"; };
+		F5E2E4C116EC3C6400D719F4 /* FSBusInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBusInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +377,8 @@
 		F5E2E49616EC025900D719F4 /* Top Bar */ = {
 			isa = PBXGroup;
 			children = (
+				F5E2E4C016EC3C6400D719F4 /* FSBusInfoViewController.h */,
+				F5E2E4C116EC3C6400D719F4 /* FSBusInfoViewController.m */,
 				F5E2E49916EC1D3700D719F4 /* FSDateTimeViewController.h */,
 				F5E2E49A16EC1D3700D719F4 /* FSDateTimeViewController.m */,
 				F5E2E49316EBFF0E00D719F4 /* FSTopBarViewController.h */,
@@ -566,6 +571,7 @@
 				88AE6A7D16EC0712008E77BC /* FSVenueMapViewController.m in Sources */,
 				88AE6A8416EC1A31008E77BC /* FSAlbumViewController.m in Sources */,
 				88AE6A8916EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m in Sources */,
+				F5E2E4C216EC3C6400D719F4 /* FSBusInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ static const CGFloat kButterBarHeight = 80.0f;
 
 @end
 
-const CGFloat kHeightOfTopBar = 80;
+static const CGFloat kHeightOfTopBar = 80;
 
 @implementation FSLeftScreenViewController
 
