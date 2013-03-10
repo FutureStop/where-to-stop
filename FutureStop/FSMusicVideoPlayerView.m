@@ -46,8 +46,9 @@
 - (void)layoutSubviews {
   self.radioheadBackgroundImageView.frame = self.bounds;
   
-  const CGFloat xTVMargin = 80.0f;
-  const CGFloat yTVMargin = 100.0f;
+  const CGFloat xTVMargin = 120.0f;
+  const CGFloat yTVTopMargin = 120.0f;
+  const CGFloat yTVBottomMargin = 20.0f;
   
   const CGFloat xVideoLeftMargin = 150.0f;
   const CGFloat xVideoRightMargin = 500.0f;
@@ -60,20 +61,20 @@
                                                  self.radioheadLogoImageView.frame.size.height);
   
   self.retroTVImageView.frame = CGRectMake(xTVMargin,
-                                           yTVMargin,
+                                           yTVTopMargin,
                                            self.frame.size.width - xTVMargin * 2.0f,
-                                           self.frame.size.height - yTVMargin);
+                                           self.frame.size.height - yTVTopMargin - yTVBottomMargin);
   self.moviePlayerView.frame =
       CGRectMake(xTVMargin + xVideoLeftMargin,
-                 yTVMargin + yVideoTopMargin,
+                 yTVTopMargin + yVideoTopMargin,
                  CGRectGetWidth(self.retroTVImageView.frame) - xVideoLeftMargin - xVideoRightMargin,
                  CGRectGetHeight(self.retroTVImageView.frame) - yVideoTopMargin - yVideoBottomMargin);
   self.noiseImageView.frame = CGRectInset(self.moviePlayerView.frame, -50.0f, -50.0f);
   
   const CGSize kLotusFlowerImageSize = {160.0f, 127.5f};
   self.lotusFlowerImageView.frame =
-      CGRectMake(CGRectGetMaxX(self.retroTVImageView.frame) - kLotusFlowerImageSize.width,
-                 0.0f,
+      CGRectMake(CGRectGetMaxX(self.retroTVImageView.frame) - kLotusFlowerImageSize.width - 20.0f,
+                 20.0f,
                  kLotusFlowerImageSize.width,
                  kLotusFlowerImageSize.height);
 }
