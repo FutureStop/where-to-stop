@@ -11,6 +11,7 @@
 #import "FSViewController.h"
 #import "MMExternalDisplay.h"
 #import "FSLeftScreenViewController.h"
+#import "FSRightScreenViewController.h"
 
 @implementation FSAppDelegate
 
@@ -21,8 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [MMExternalDisplay setUpWithViewControllerFactory:^{
-    FSLeftScreenViewController *leftVC = [[FSLeftScreenViewController alloc] init];
-    return leftVC;
+//    FSLeftScreenViewController *leftVC = [[FSLeftScreenViewController alloc] init];
+//    return leftVC;
+    FSRightScreenViewController *rightVC = [[FSRightScreenViewController alloc] init];
+    return rightVC;
   }];
   
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

@@ -7,9 +7,8 @@
 //
 
 #import "FSLeftScreenViewController.h"
-#import "FSMusicVideoPlayerViewController.h"
 
-static const CGFloat kButterBarHeight = 80.0f;
+#import "FSMusicVideoPlayerViewController.h"
 
 @interface FSLeftScreenViewController ()
 
@@ -24,6 +23,7 @@ static const CGFloat kButterBarHeight = 80.0f;
 
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  
   [self addMusicVideoPlayerController];
 }
 
@@ -32,31 +32,8 @@ static const CGFloat kButterBarHeight = 80.0f;
   [self addChildViewController:videoPlayerController];
   [self.view addSubview:videoPlayerController.view];
   [videoPlayerController didMoveToParentViewController:videoPlayerController];
-  videoPlayerController.view.frame = CGRectMake(0,
-                                                kButterBarHeight,
-                                                self.view.bounds.size.width,
-                                                self.view.bounds.size.height - kButterBarHeight);
+  videoPlayerController.view.frame = self.view.frame;
   [videoPlayerController playMusicVideo];
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

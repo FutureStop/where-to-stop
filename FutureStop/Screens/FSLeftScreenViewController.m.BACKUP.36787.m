@@ -7,12 +7,12 @@
 //
 
 #import "FSLeftScreenViewController.h"
+#import "FSCountDownViewController.h"
+
 #import "FSMusicVideoPlayerViewController.h"
 
-static const CGFloat kButterBarHeight = 80.0f;
-
 @interface FSLeftScreenViewController ()
-
+@property(nonatomic, strong) FSCountDownViewController *countdownVC;
 @end
 
 @implementation FSLeftScreenViewController
@@ -22,8 +22,10 @@ static const CGFloat kButterBarHeight = 80.0f;
   self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
+<<<<<<< HEAD
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
+  
   [self addMusicVideoPlayerController];
 }
 
@@ -32,13 +34,9 @@ static const CGFloat kButterBarHeight = 80.0f;
   [self addChildViewController:videoPlayerController];
   [self.view addSubview:videoPlayerController.view];
   [videoPlayerController didMoveToParentViewController:videoPlayerController];
-  videoPlayerController.view.frame = CGRectMake(0,
-                                                kButterBarHeight,
-                                                self.view.bounds.size.width,
-                                                self.view.bounds.size.height - kButterBarHeight);
+  videoPlayerController.view.frame = self.view.frame;
   [videoPlayerController playMusicVideo];
-}
-
+=======
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -50,13 +48,22 @@ static const CGFloat kButterBarHeight = 80.0f;
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [self loadCountdownView];
 	// Do any additional setup after loading the view.
+}
+
+- (void)loadCountdownView {
+  self.countdownVC = [[FSCountDownViewController alloc] init];
+  self.countdownVC.view.frame = CGRectMake(100.0f, 100.0f, 500.0f, 200.0f);
+  [self addChildViewController:self.countdownVC];
+  [self.view addSubview:self.countdownVC.view];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+>>>>>>> rene-countdownMapAlbumArt
 }
 
 @end
