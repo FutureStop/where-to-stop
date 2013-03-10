@@ -35,6 +35,8 @@
 		88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A6E16EBF6B2008E77BC /* FSReneContainerViewController.m */; };
 		88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */; };
 		88AE6A7616EBFB46008E77BC /* FSRightScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */; };
+		88AE6A7A16EBFE8F008E77BC /* FSCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7916EBFE8F008E77BC /* FSCountDownViewController.m */; };
+		88AE6A7D16EC0712008E77BC /* FSVenueMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7C16EC0712008E77BC /* FSVenueMapViewController.m */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -99,6 +101,10 @@
 		88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSLeftScreenViewController.m; path = Screens/FSLeftScreenViewController.m; sourceTree = "<group>"; };
 		88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRightScreenViewController.h; sourceTree = "<group>"; };
 		88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRightScreenViewController.m; sourceTree = "<group>"; };
+		88AE6A7816EBFE8F008E77BC /* FSCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCountDownViewController.h; path = Screens/CountdownMap/FSCountDownViewController.h; sourceTree = "<group>"; };
+		88AE6A7916EBFE8F008E77BC /* FSCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCountDownViewController.m; path = Screens/CountdownMap/FSCountDownViewController.m; sourceTree = "<group>"; };
+		88AE6A7B16EC0712008E77BC /* FSVenueMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSVenueMapViewController.h; path = Screens/CountdownMap/FSVenueMapViewController.h; sourceTree = "<group>"; };
+		88AE6A7C16EC0712008E77BC /* FSVenueMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSVenueMapViewController.m; path = Screens/CountdownMap/FSVenueMapViewController.m; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -179,12 +185,24 @@
 		88AE6A7016EBFAE7008E77BC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				88AE6A7716EBFE42008E77BC /* CountdownMap */,
 				88AE6A7116EBFB38008E77BC /* FSLeftScreenViewController.h */,
 				88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */,
 				88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */,
 				88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */,
 			);
 			name = Screens;
+			sourceTree = "<group>";
+		};
+		88AE6A7716EBFE42008E77BC /* CountdownMap */ = {
+			isa = PBXGroup;
+			children = (
+				88AE6A7816EBFE8F008E77BC /* FSCountDownViewController.h */,
+				88AE6A7916EBFE8F008E77BC /* FSCountDownViewController.m */,
+				88AE6A7B16EC0712008E77BC /* FSVenueMapViewController.h */,
+				88AE6A7C16EC0712008E77BC /* FSVenueMapViewController.m */,
+			);
+			name = CountdownMap;
 			sourceTree = "<group>";
 		};
 		C64C6F6516EAE6A900CAD6C7 = {
@@ -435,6 +453,8 @@
 				88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */,
 				88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */,
 				88AE6A7616EBFB46008E77BC /* FSRightScreenViewController.m in Sources */,
+				88AE6A7A16EBFE8F008E77BC /* FSCountDownViewController.m in Sources */,
+				88AE6A7D16EC0712008E77BC /* FSVenueMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
