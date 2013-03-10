@@ -39,6 +39,11 @@
 		88AE6A8416EC1A31008E77BC /* FSAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A8316EC1A31008E77BC /* FSAlbumViewController.m */; };
 		88AE6A8616EC1F75008E77BC /* radiohead.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A8516EC1F75008E77BC /* radiohead.png */; };
 		88AE6A8916EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A8816EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m */; };
+		88AE6A8C16EC22D8008E77BC /* FSRightBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A8B16EC22D8008E77BC /* FSRightBackgroundViewController.m */; };
+		88AE6A8E16EC30BA008E77BC /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A8D16EC30BA008E77BC /* background.png */; };
+		88AE6A9216EC36B4008E77BC /* shirt2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A8F16EC36B4008E77BC /* shirt2.png */; };
+		88AE6A9316EC36B4008E77BC /* shirt1.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A9016EC36B4008E77BC /* shirt1.png */; };
+		88AE6A9416EC36B4008E77BC /* poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A9116EC36B4008E77BC /* poster.jpg */; };
 		A34DCA1D16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DCA1C16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m */; };
 		A34DCA2016EBF8FD00E55327 /* FSMusicVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */; };
 		A34DCA2216EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */; };
@@ -128,6 +133,12 @@
 		88AE6A8516EC1F75008E77BC /* radiohead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead.png; sourceTree = "<group>"; };
 		88AE6A8716EC1F8B008E77BC /* FSRadioHeadPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSRadioHeadPhotoViewController.h; path = Screens/CountdownMap/FSRadioHeadPhotoViewController.h; sourceTree = "<group>"; };
 		88AE6A8816EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSRadioHeadPhotoViewController.m; path = Screens/CountdownMap/FSRadioHeadPhotoViewController.m; sourceTree = "<group>"; };
+		88AE6A8A16EC22D8008E77BC /* FSRightBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSRightBackgroundViewController.h; path = Screens/CountdownMap/FSRightBackgroundViewController.h; sourceTree = "<group>"; };
+		88AE6A8B16EC22D8008E77BC /* FSRightBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSRightBackgroundViewController.m; path = Screens/CountdownMap/FSRightBackgroundViewController.m; sourceTree = "<group>"; };
+		88AE6A8D16EC30BA008E77BC /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		88AE6A8F16EC36B4008E77BC /* shirt2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt2.png; sourceTree = "<group>"; };
+		88AE6A9016EC36B4008E77BC /* shirt1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt1.png; sourceTree = "<group>"; };
+		88AE6A9116EC36B4008E77BC /* poster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = poster.jpg; sourceTree = "<group>"; };
 		A34DCA1B16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMusicVideoPlayerViewController.h; sourceTree = "<group>"; };
 		A34DCA1C16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMusicVideoPlayerViewController.m; sourceTree = "<group>"; };
 		A34DCA1E16EBF8FD00E55327 /* FSMusicVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMusicVideoPlayerView.h; sourceTree = "<group>"; };
@@ -253,6 +264,8 @@
 				88AE6A8316EC1A31008E77BC /* FSAlbumViewController.m */,
 				88AE6A8716EC1F8B008E77BC /* FSRadioHeadPhotoViewController.h */,
 				88AE6A8816EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m */,
+				88AE6A8A16EC22D8008E77BC /* FSRightBackgroundViewController.h */,
+				88AE6A8B16EC22D8008E77BC /* FSRightBackgroundViewController.m */,
 			);
 			name = CountdownMap;
 			sourceTree = "<group>";
@@ -260,6 +273,10 @@
 		C64C6F6516EAE6A900CAD6C7 = {
 			isa = PBXGroup;
 			children = (
+				88AE6A8F16EC36B4008E77BC /* shirt2.png */,
+				88AE6A9016EC36B4008E77BC /* shirt1.png */,
+				88AE6A9116EC36B4008E77BC /* poster.jpg */,
+				88AE6A8D16EC30BA008E77BC /* background.png */,
 				88AE6A8516EC1F75008E77BC /* radiohead.png */,
 				88AE6A8016EC18DE008E77BC /* album.jpg */,
 				88AE6A7E16EC100B008E77BC /* venue.png */,
@@ -501,6 +518,10 @@
 				88AE6A8616EC1F75008E77BC /* radiohead.png in Resources */,
 				A39100BD16EC234800E4BB74 /* lotus_flower.jpg in Resources */,
 				A39100BF16EC2C7B00E4BB74 /* noise.png in Resources */,
+				88AE6A8E16EC30BA008E77BC /* background.png in Resources */,
+				88AE6A9216EC36B4008E77BC /* shirt2.png in Resources */,
+				88AE6A9316EC36B4008E77BC /* shirt1.png in Resources */,
+				88AE6A9416EC36B4008E77BC /* poster.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +587,7 @@
 				88AE6A7D16EC0712008E77BC /* FSVenueMapViewController.m in Sources */,
 				88AE6A8416EC1A31008E77BC /* FSAlbumViewController.m in Sources */,
 				88AE6A8916EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m in Sources */,
+				88AE6A8C16EC22D8008E77BC /* FSRightBackgroundViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

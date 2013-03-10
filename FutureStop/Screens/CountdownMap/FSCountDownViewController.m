@@ -53,9 +53,11 @@
 - (void)loadCountdownLabel {
   self.countdownLabel = [[UILabel alloc] initWithFrame:CGRectZero];
   self.countdownLabel.backgroundColor = [UIColor clearColor];
+  self.countdownLabel.textColor = [UIColor whiteColor];
   self.countdownLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
   self.countdownLabel.textAlignment = NSTextAlignmentCenter;
-  self.countdownLabel.font = [UIFont systemFontOfSize:60.0f];
+  self.countdownLabel.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBlack"
+                                             size:100.0f];
   self.countdownLabel.text = @"Show In 1:25:02";
   [self.view addSubview:self.countdownLabel];
 }
