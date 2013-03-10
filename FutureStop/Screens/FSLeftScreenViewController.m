@@ -7,12 +7,10 @@
 //
 
 #import "FSLeftScreenViewController.h"
-#import "FSCountDownViewController.h"
-#import "FSLeftScreenViewController.h"
 #import "FSMusicVideoPlayerViewController.h"
 
 @interface FSLeftScreenViewController ()
-@property(nonatomic, strong) FSCountDownViewController *countdownVC;
+
 @end
 
 @implementation FSLeftScreenViewController
@@ -47,15 +45,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [self loadCountdownView];
 	// Do any additional setup after loading the view.
-}
-
-- (void)loadCountdownView {
-  self.countdownVC = [[FSCountDownViewController alloc] init];
-  self.countdownVC.view.frame = CGRectMake(100.0f, 100.0f, 500.0f, 200.0f);
-  [self addChildViewController:self.countdownVC];
-  [self.view addSubview:self.countdownVC.view];
 }
 
 - (void)didReceiveMemoryWarning
