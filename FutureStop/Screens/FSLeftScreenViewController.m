@@ -8,6 +8,9 @@
 
 #import "FSLeftScreenViewController.h"
 #import "FSTopBarViewController.h"
+#import "FSMusicVideoPlayerViewController.h"
+
+static const CGFloat kButterBarHeight = 80.0f;
 
 @interface FSLeftScreenViewController ()
 
@@ -37,6 +40,7 @@ const CGFloat kHeightOfTopBar = 80;
 {
     [super viewDidLoad];
 	[self setupTopBar];
+    [self addMusicVideoPlayerController];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -48,12 +52,17 @@ const CGFloat kHeightOfTopBar = 80;
     self.topBarViewController = [[FSTopBarViewController alloc] initWithNibName:nil bundle:nil];
     [self addChildViewController:self.topBarViewController];
     [self.view addSubview:self.topBarViewController.view];
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addMusicVideoPlayerController {
+  FSMusicVideoPlayerViewController *videoPlayerController = [[FSMusicVideoPlayerViewController alloc] init];
+  videoPlayerController.view.frame = CGRectMake(0,
+                                                kButterBarHeight,
+                                                1920.0f,
+                                                1080.0f - kButterBarHeight);
+  [self addChildViewController:videoPlayerController];
+  [videoPlayerController didMoveToParentViewController:videoPlayerController];
+  [self.view addSubview:videoPlayerController.view];
+  [videoPlayerController playMusicVideo];
 }
 
 @end

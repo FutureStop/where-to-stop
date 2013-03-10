@@ -32,6 +32,21 @@
 		88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A6E16EBF6B2008E77BC /* FSReneContainerViewController.m */; };
 		88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */; };
 		88AE6A7616EBFB46008E77BC /* FSRightScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */; };
+		88AE6A7A16EBFE8F008E77BC /* FSCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7916EBFE8F008E77BC /* FSCountDownViewController.m */; };
+		88AE6A7D16EC0712008E77BC /* FSVenueMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A7C16EC0712008E77BC /* FSVenueMapViewController.m */; };
+		88AE6A7F16EC100B008E77BC /* venue.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A7E16EC100B008E77BC /* venue.png */; };
+		88AE6A8116EC18DE008E77BC /* album.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A8016EC18DE008E77BC /* album.jpg */; };
+		88AE6A8416EC1A31008E77BC /* FSAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A8316EC1A31008E77BC /* FSAlbumViewController.m */; };
+		88AE6A8616EC1F75008E77BC /* radiohead.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AE6A8516EC1F75008E77BC /* radiohead.png */; };
+		88AE6A8916EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AE6A8816EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m */; };
+		A34DCA1D16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DCA1C16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m */; };
+		A34DCA2016EBF8FD00E55327 /* FSMusicVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */; };
+		A34DCA2216EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */; };
+		A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100B416EC050F00E4BB74 /* retrotv@2x.png */; };
+		A39100B916EC1C3800E4BB74 /* radiohead_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */; };
+		A39100BB16EC1C4D00E4BB74 /* radiohead_logo_black.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */; };
+		A39100BD16EC234800E4BB74 /* lotus_flower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A39100BC16EC234800E4BB74 /* lotus_flower.jpg */; };
+		A39100BF16EC2C7B00E4BB74 /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = A39100BE16EC2C7B00E4BB74 /* noise.png */; };
 		C64C6F7216EAE6A900CAD6C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */; };
 		C64C6F7416EAE6A900CAD6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7316EAE6A900CAD6C7 /* Foundation.framework */; };
 		C64C6F7616EAE6A900CAD6C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C6F7516EAE6A900CAD6C7 /* CoreGraphics.framework */; };
@@ -102,6 +117,27 @@
 		88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSLeftScreenViewController.m; path = Screens/FSLeftScreenViewController.m; sourceTree = "<group>"; };
 		88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRightScreenViewController.h; sourceTree = "<group>"; };
 		88AE6A7516EBFB46008E77BC /* FSRightScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRightScreenViewController.m; sourceTree = "<group>"; };
+		88AE6A7816EBFE8F008E77BC /* FSCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCountDownViewController.h; path = Screens/CountdownMap/FSCountDownViewController.h; sourceTree = "<group>"; };
+		88AE6A7916EBFE8F008E77BC /* FSCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSCountDownViewController.m; path = Screens/CountdownMap/FSCountDownViewController.m; sourceTree = "<group>"; };
+		88AE6A7B16EC0712008E77BC /* FSVenueMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSVenueMapViewController.h; path = Screens/CountdownMap/FSVenueMapViewController.h; sourceTree = "<group>"; };
+		88AE6A7C16EC0712008E77BC /* FSVenueMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSVenueMapViewController.m; path = Screens/CountdownMap/FSVenueMapViewController.m; sourceTree = "<group>"; };
+		88AE6A7E16EC100B008E77BC /* venue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venue.png; sourceTree = "<group>"; };
+		88AE6A8016EC18DE008E77BC /* album.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = album.jpg; sourceTree = "<group>"; };
+		88AE6A8216EC1A31008E77BC /* FSAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSAlbumViewController.h; path = Screens/CountdownMap/FSAlbumViewController.h; sourceTree = "<group>"; };
+		88AE6A8316EC1A31008E77BC /* FSAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSAlbumViewController.m; path = Screens/CountdownMap/FSAlbumViewController.m; sourceTree = "<group>"; };
+		88AE6A8516EC1F75008E77BC /* radiohead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead.png; sourceTree = "<group>"; };
+		88AE6A8716EC1F8B008E77BC /* FSRadioHeadPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSRadioHeadPhotoViewController.h; path = Screens/CountdownMap/FSRadioHeadPhotoViewController.h; sourceTree = "<group>"; };
+		88AE6A8816EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSRadioHeadPhotoViewController.m; path = Screens/CountdownMap/FSRadioHeadPhotoViewController.m; sourceTree = "<group>"; };
+		A34DCA1B16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMusicVideoPlayerViewController.h; sourceTree = "<group>"; };
+		A34DCA1C16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMusicVideoPlayerViewController.m; sourceTree = "<group>"; };
+		A34DCA1E16EBF8FD00E55327 /* FSMusicVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMusicVideoPlayerView.h; sourceTree = "<group>"; };
+		A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMusicVideoPlayerView.m; sourceTree = "<group>"; };
+		A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Radiohead - Lotus Flower.mp4"; sourceTree = "<group>"; };
+		A39100B416EC050F00E4BB74 /* retrotv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retrotv@2x.png"; sourceTree = "<group>"; };
+		A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radiohead_background.jpg; sourceTree = "<group>"; };
+		A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiohead_logo_black.png; sourceTree = "<group>"; };
+		A39100BC16EC234800E4BB74 /* lotus_flower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lotus_flower.jpg; sourceTree = "<group>"; };
+		A39100BE16EC2C7B00E4BB74 /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
 		BC46B7DB35214847A06FF326 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C64C6F6E16EAE6A900CAD6C7 /* FutureStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FutureStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64C6F7116EAE6A900CAD6C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -196,6 +232,7 @@
 		88AE6A7016EBFAE7008E77BC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				88AE6A7716EBFE42008E77BC /* CountdownMap */,
 				88AE6A7116EBFB38008E77BC /* FSLeftScreenViewController.h */,
 				88AE6A7216EBFB38008E77BC /* FSLeftScreenViewController.m */,
 				88AE6A7416EBFB46008E77BC /* FSRightScreenViewController.h */,
@@ -205,13 +242,37 @@
 			name = Screens;
 			sourceTree = "<group>";
 		};
+		88AE6A7716EBFE42008E77BC /* CountdownMap */ = {
+			isa = PBXGroup;
+			children = (
+				88AE6A7816EBFE8F008E77BC /* FSCountDownViewController.h */,
+				88AE6A7916EBFE8F008E77BC /* FSCountDownViewController.m */,
+				88AE6A7B16EC0712008E77BC /* FSVenueMapViewController.h */,
+				88AE6A7C16EC0712008E77BC /* FSVenueMapViewController.m */,
+				88AE6A8216EC1A31008E77BC /* FSAlbumViewController.h */,
+				88AE6A8316EC1A31008E77BC /* FSAlbumViewController.m */,
+				88AE6A8716EC1F8B008E77BC /* FSRadioHeadPhotoViewController.h */,
+				88AE6A8816EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m */,
+			);
+			name = CountdownMap;
+			sourceTree = "<group>";
+		};
 		C64C6F6516EAE6A900CAD6C7 = {
 			isa = PBXGroup;
 			children = (
+				88AE6A8516EC1F75008E77BC /* radiohead.png */,
+				88AE6A8016EC18DE008E77BC /* album.jpg */,
+				88AE6A7E16EC100B008E77BC /* venue.png */,
 				885DF50316EB151F00A25348 /* 72.png */,
 				885DF50116EB151700A25348 /* 144.png */,
 				885DF4FF16EB14F100A25348 /* 114.png */,
 				885DF4FD16EB14E600A25348 /* 57.png */,
+				A34DCA2116EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 */,
+				A39100B416EC050F00E4BB74 /* retrotv@2x.png */,
+				A39100B816EC1C3800E4BB74 /* radiohead_background.jpg */,
+				A39100BA16EC1C4D00E4BB74 /* radiohead_logo_black.png */,
+				A39100BC16EC234800E4BB74 /* lotus_flower.jpg */,
+				A39100BE16EC2C7B00E4BB74 /* noise.png */,
 				C64C6F7716EAE6A900CAD6C7 /* FutureStop */,
 				C64C6F9E16EAE6A900CAD6C7 /* FutureStopTests */,
 				C64C6F7016EAE6A900CAD6C7 /* Frameworks */,
@@ -269,6 +330,10 @@
 				C64C6F8F16EAE6A900CAD6C7 /* FSViewController_iPad.xib */,
 				885DF57616EB190200A25348 /* FutureStop.xcdatamodeld */,
 				C64C6F7816EAE6A900CAD6C7 /* Supporting Files */,
+				A34DCA1E16EBF8FD00E55327 /* FSMusicVideoPlayerView.h */,
+				A34DCA1F16EBF8FD00E55327 /* FSMusicVideoPlayerView.m */,
+				A34DCA1B16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.h */,
+				A34DCA1C16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m */,
 			);
 			path = FutureStop;
 			sourceTree = "<group>";
@@ -426,6 +491,16 @@
 				F5E2E4BD16EC261C00D719F4 /* 6.png in Resources */,
 				F5E2E4BE16EC261C00D719F4 /* 7.png in Resources */,
 				F5E2E4BF16EC261C00D719F4 /* 8.png in Resources */,
+				A34DCA2216EBFB4F00E55327 /* Radiohead - Lotus Flower.mp4 in Resources */,
+				A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */,
+				A39100B916EC1C3800E4BB74 /* radiohead_background.jpg in Resources */,
+				A39100BB16EC1C4D00E4BB74 /* radiohead_logo_black.png in Resources */,
+				A39100B516EC050F00E4BB74 /* retrotv@2x.png in Resources */,
+				88AE6A7F16EC100B008E77BC /* venue.png in Resources */,
+				88AE6A8116EC18DE008E77BC /* album.jpg in Resources */,
+				88AE6A8616EC1F75008E77BC /* radiohead.png in Resources */,
+				A39100BD16EC234800E4BB74 /* lotus_flower.jpg in Resources */,
+				A39100BF16EC2C7B00E4BB74 /* noise.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +553,8 @@
 				C64C6F8216EAE6A900CAD6C7 /* FSAppDelegate.m in Sources */,
 				C64C6F8B16EAE6A900CAD6C7 /* FSViewController.m in Sources */,
 				885DF57816EB190200A25348 /* FutureStop.xcdatamodeld in Sources */,
+				A34DCA1D16EBF8EE00E55327 /* FSMusicVideoPlayerViewController.m in Sources */,
+				A34DCA2016EBF8FD00E55327 /* FSMusicVideoPlayerView.m in Sources */,
 				88AE6A6C16EBF645008E77BC /* MMExternalDisplay.m in Sources */,
 				88AE6A6F16EBF6B2008E77BC /* FSReneContainerViewController.m in Sources */,
 				88AE6A7316EBFB38008E77BC /* FSLeftScreenViewController.m in Sources */,
@@ -485,6 +562,10 @@
 				F5E2E49516EBFF0E00D719F4 /* FSTopBarViewController.m in Sources */,
 				F5E2E49B16EC1D3700D719F4 /* FSDateTimeViewController.m in Sources */,
 				F5E2E49E16EC239600D719F4 /* FSWeatherViewController.m in Sources */,
+				88AE6A7A16EBFE8F008E77BC /* FSCountDownViewController.m in Sources */,
+				88AE6A7D16EC0712008E77BC /* FSVenueMapViewController.m in Sources */,
+				88AE6A8416EC1A31008E77BC /* FSAlbumViewController.m in Sources */,
+				88AE6A8916EC1F8B008E77BC /* FSRadioHeadPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
