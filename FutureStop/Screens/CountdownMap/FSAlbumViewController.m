@@ -57,7 +57,7 @@ static NSString * const kVenueMapImageName = @"album.jpg";
     albumAnimation.fromValue = [NSValue valueWithCATransform3D:rotationTransform];
     albumAnimation.toValue = [NSValue valueWithCATransform3D:toRotationTransform];
     albumAnimation.duration = 10;
-    albumAnimation.repeatCount = 0;
+    albumAnimation.repeatCount = 10000000;
     albumAnimation.autoreverses = YES;
     
     [weakSelf.albumImageView.layer addAnimation:albumAnimation forKey:@""];

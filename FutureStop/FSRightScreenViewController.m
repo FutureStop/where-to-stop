@@ -30,8 +30,8 @@ static const CGFloat kHeightOfTopBar = 80;
 @implementation FSRightScreenViewController
 
 - (void)loadView {
-    self.view = [[UIView alloc] init];
-    self.view.backgroundColor = [UIColor whiteColor];
+  self.view = [[UIView alloc] init];
+  self.view.backgroundColor = [UIColor blackColor];
 }
 
 - (void)viewDidLoad {
@@ -143,7 +143,8 @@ static const CGFloat kHeightOfTopBar = 80;
 
 - (void)loadBackgroundView {
   self.backgroundVC = [[FSRightBackgroundViewController alloc] init];
-  self.backgroundVC.view.frame = CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f);
+  self.backgroundVC.view.frame =
+    CGRectOffset(CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f), 40.0f, 80.0f);
   [self addChildViewController:self.backgroundVC];
   [self.view addSubview:self.backgroundVC.view];
 }
