@@ -8,10 +8,17 @@
 
 #import "FSAppDelegate.h"
 
+#import <CoreBluetooth/CoreBluetooth.h>
+
 #import "FSViewController.h"
 #import "MMExternalDisplay.h"
 #import "FSLeftScreenViewController.h"
 #import "FSRightScreenViewController.h"
+#import "FSIDFence.h"
+
+@interface FSAppDelegate ()
+@property(nonatomic, strong) FSIDFence *fence;
+@end
 
 @implementation FSAppDelegate
 
@@ -21,10 +28,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  self.fence = [[FSIDFence alloc] init];
+  FSAppDelegate __weak *weakSelf = self;
   [MMExternalDisplay setUpWithViewControllerFactory:^{
     FSLeftScreenViewController *leftVC = [[FSLeftScreenViewController alloc] init];
-    return leftVC;
+    
+    [weakSelf.fence startScanWithFenceServiceUUID:nil
+                               characteristicUUID:nil
+                                  fenceEntryBlock:^(CBPeripheral *p){
+                                    [leftVC loadRadiohead];
+                                  }
+                                fenceLeavingBlock:^(CBPeripheral *p){
+                                  [leftVC unloadRadiohead];
+                                }];
+     return leftVC;
+    
 //    FSRightScreenViewController *rightVC = [[FSRightScreenViewController alloc] init];
+//    [weakSelf.fence startScanWithFenceServiceUUID:nil
+//                               characteristicUUID:nil
+//                                  fenceEntryBlock:^(CBPeripheral *p){
+//                                    [rightVC loadRadiohead];
+//                                  }
+//                                fenceLeavingBlock:^(CBPeripheral *p){
+//                                  [rightVC unloadRadiohead];
+//                                }];
 //    return rightVC;
   }];
   

@@ -42,26 +42,12 @@ static const CGFloat kHeightOfTopBar = 80;
   [self setupTopBar];
   self.topBarViewController.view.alpha = 0.0f;
   
-  FSRightScreenViewController __weak *weakSelf = self;
-	double delayInSeconds = 4.0;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-    [weakSelf loadRadiohead];
-    self.topBarViewController.view.alpha = 0.0f;
-    self.backgroundVC.view.alpha = 0.0f;
-    self.countdownVC.view.alpha = 0.0f;
-    self.venueMapVC.view.alpha = 0.0f;
-    self.albumVC.view.alpha = 0.0f;
-    self.radioheadVC.view.alpha = 0.0f;
-    [UIView animateWithDuration:0.6 animations:^{
-      self.topBarViewController.view.alpha = 1.0f;
-      self.backgroundVC.view.alpha = 1.0f;
-      self.countdownVC.view.alpha = 1.0f;
-      self.venueMapVC.view.alpha = 1.0f;
-      self.albumVC.view.alpha = 1.0f;
-      self.radioheadVC.view.alpha = 1.0f;
-    }];
-  });
+//  FSRightScreenViewController __weak *weakSelf = self;
+//	double delayInSeconds = 4.0;
+//  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//    [weakSelf loadRadiohead];
+//      });
 }
 
 - (void)loadRadiohead {
@@ -74,12 +60,28 @@ static const CGFloat kHeightOfTopBar = 80;
   [self.topBarViewController.view removeFromSuperview];
   [self.view addSubview:self.topBarViewController.view];
   
-  FSRightScreenViewController __weak *weakSelf = self;
-  double delayInSeconds = 4.0;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-    [weakSelf unloadRadiohead];
-  });
+  self.topBarViewController.view.alpha = 0.0f;
+  self.backgroundVC.view.alpha = 0.0f;
+  self.countdownVC.view.alpha = 0.0f;
+  self.venueMapVC.view.alpha = 0.0f;
+  self.albumVC.view.alpha = 0.0f;
+  self.radioheadVC.view.alpha = 0.0f;
+  [UIView animateWithDuration:0.6 animations:^{
+    self.topBarViewController.view.alpha = 1.0f;
+    self.backgroundVC.view.alpha = 1.0f;
+    self.countdownVC.view.alpha = 1.0f;
+    self.venueMapVC.view.alpha = 1.0f;
+    self.albumVC.view.alpha = 1.0f;
+    self.radioheadVC.view.alpha = 1.0f;
+  }];
+
+  
+//  FSRightScreenViewController __weak *weakSelf = self;
+//  double delayInSeconds = 4.0;
+//  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//    [weakSelf unloadRadiohead];
+//  });
 }
 
 

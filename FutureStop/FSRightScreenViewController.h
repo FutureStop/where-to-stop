@@ -10,4 +10,7 @@
 
 @interface FSRightScreenViewController : UIViewController
 
+- (void)loadRadiohead;
+- (void)unloadRadiohead;
+
 @end

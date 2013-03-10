@@ -9,8 +9,8 @@
 #import "FSRangeFinder.h"
 
 
-#define CONTROL_THRESHOLD -55
-#define LEAVE_THRESHOLD -65
+#define CONTROL_THRESHOLD -64
+#define LEAVE_THRESHOLD -72
 #define TIME_THRESHOLD 3
 
 @interface FSPeripheral : NSObject

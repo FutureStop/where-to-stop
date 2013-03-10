@@ -62,8 +62,11 @@ typedef void (^FSIDFenceLeavingBlock)(CBPeripheral *leavingPeripheral);
 }
 
 - (void)scan {
+  if (self.serviceUUID) {
     [self.centralManager scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:self.serviceUUID]]
                                                 options:@{ CBCentralManagerScanOptionAllowDuplicatesKey : @YES }];
+  }
+
     
     [self.centralManager retrieveConnectedPeripherals];
 }

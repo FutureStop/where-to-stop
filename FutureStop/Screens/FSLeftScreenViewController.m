@@ -48,29 +48,31 @@ static const CGFloat kHeightOfTopBar = 80;
   [self loadArt];
   [self setupTopBar];
   self.topBarViewController.view.alpha = 0.0f;
-  FSLeftScreenViewController __weak *weakSelf = self;
-	double delayInSeconds = 4.0;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-    [weakSelf loadRadiohead];
-    self.topBarViewController.view.alpha = 0.0f;
-    self.videoPlayerController.view.alpha = 0.0f;
-    [UIView animateWithDuration:0.6 animations:^{
-      self.topBarViewController.view.alpha = 1.0f;
-      self.videoPlayerController.view.alpha = 1.0f;
-    }];
-  });
+//  FSLeftScreenViewController __weak *weakSelf = self;
+//	double delayInSeconds = 4.0;
+//  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//    [weakSelf loadRadiohead];
+//    
+//  });
 }
 
 - (void)loadRadiohead {
   [self addMusicVideoPlayerController];
   
-  FSLeftScreenViewController __weak *weakSelf = self;
-  double delayInSeconds = 4.0;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-    [weakSelf unloadRadiohead];
-  });
+  self.topBarViewController.view.alpha = 0.0f;
+  self.videoPlayerController.view.alpha = 0.0f;
+  [UIView animateWithDuration:0.6 animations:^{
+    self.topBarViewController.view.alpha = 1.0f;
+    self.videoPlayerController.view.alpha = 1.0f;
+  }];
+  
+//  FSLeftScreenViewController __weak *weakSelf = self;
+//  double delayInSeconds = 4.0;
+//  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//    [weakSelf unloadRadiohead];
+//  });
 }
 
 - (void)unloadRadiohead {

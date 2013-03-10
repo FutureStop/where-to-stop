@@ -10,4 +10,7 @@
 
 @interface FSLeftScreenViewController : UIViewController
 
+- (void)loadRadiohead;
+- (void)unloadRadiohead;
+
 @end
