@@ -12,6 +12,7 @@
 #import "FSAlbumViewController.h"
 #import "FSRadioHeadPhotoViewController.h"
 #import "FSRightBackgroundViewController.h"
+#import "FSRightArtViewController.h"
 
 @interface FSRightScreenViewController ()
 @property(nonatomic, strong) FSCountDownViewController *countdownVC;
@@ -19,6 +20,7 @@
 @property(nonatomic, strong) FSAlbumViewController *albumVC;
 @property(nonatomic, strong) FSRadioHeadPhotoViewController *radioheadVC;
 @property(nonatomic, strong) FSRightBackgroundViewController *backgroundVC;
+@property(nonatomic, strong) FSRightArtViewController *artVC;
 @end
 
 @implementation FSRightScreenViewController
@@ -30,11 +32,21 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [self loadBackgroundView];
-  [self loadCountdownView];
-  [self loadVenueMapView];
-  [self loadAlbumView];
-  [self loadRadioheadView];
+  
+  [self loadArt];
+  
+//  [self loadBackgroundView];
+//  [self loadCountdownView];
+//  [self loadVenueMapView];
+//  [self loadAlbumView];
+//  [self loadRadioheadView];
+}
+
+- (void)loadArt {
+  self.artVC = [[FSRightArtViewController alloc] init];
+  self.artVC.view.frame = CGRectMake(0.0f, 0.0f, 1920.0f, 1080.0f);
+  [self addChildViewController:self.artVC];
+  [self.view addSubview:self.artVC.view];
 }
 
 - (void)didReceiveMemoryWarning {
