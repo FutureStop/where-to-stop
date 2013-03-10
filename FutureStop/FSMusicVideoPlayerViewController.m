@@ -27,6 +27,7 @@
     _moviePlayerController.repeatMode = MPMovieRepeatModeOne;
     _moviePlayerController.controlStyle = MPMovieControlStyleNone;
     _moviePlayerController.scalingMode = MPMovieScalingModeAspectFill;
+    _moviePlayerController.useApplicationAudioSession = NO;
   }
   return self;
 }

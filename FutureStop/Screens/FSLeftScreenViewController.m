@@ -37,7 +37,7 @@ static const CGFloat kButterBarHeight = 80.0f;
   videoPlayerController.view.frame = CGRectMake(0,
                                                 kButterBarHeight,
                                                 self.view.bounds.size.width,
-                                                self.view.bounds.size.height - kButterBarHeight * 2.0f);
+                                                self.view.bounds.size.height - kButterBarHeight);
   [videoPlayerController playMusicVideo];
 }
 
